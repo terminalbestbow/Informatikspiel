@@ -7,13 +7,15 @@ func _ready():
 	print(Global.level)
 	match Global.level:
 		1:
-			Global.set_boxes_remaining(1)
+			Global.set_boxes_remaining(1) #3
 		2:
-			Global.set_boxes_remaining(3)
+			Global.set_boxes_remaining(1) #3
 		3:
-			Global.set_boxes_remaining(3)
+			Global.set_boxes_remaining(1) #6
 		4:
-			Global.set_boxes_remaining(3)
+			Global.set_boxes_remaining(1) #7
+		5:
+			Global.set_boxes_remaining(1) #14
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
