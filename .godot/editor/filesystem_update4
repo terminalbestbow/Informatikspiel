@@ -1,0 +1,12 @@
+res://Scenes/sokoban_world.tscn
+res://sokoban_tiles.tres
+res://scripts/box.gd
+res://Scenes/player.tscn
+res://Scenes/box.tscn
+res://Scenes/checkpoint.tscn
+res://Scenes/UI.tscn
+res://Scenes/walls.tscn
+res://Scenes/hud.tscn
+res://Scenes/sokoban_lv_2.tscn
+res://scripts/global_variables.gd
+res://scripts/sokoban_world.gd

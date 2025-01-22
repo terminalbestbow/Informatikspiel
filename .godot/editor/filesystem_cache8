@@ -1,0 +1,39 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1736927520
+icon.svg::CompressedTexture2D::9088708559724503890::1733904136::1733904146::1::::<><>::
+sokoban_tiles.tres::TileSet::5871879983835884021::1736774888::0::1::::<><>::uid://d0r3vpnjuqivk::::res://assets/Wall placeholder.png<>uid://dxglydjvvmoua::::res://assets/tile placeholder.png
+::res://assets/::1734509971
+27georgefloyd-videoSixteenByNineJumbo1600.jpg::CompressedTexture2D::6599171941228015990::1733913048::1733913050::1::::<><>::
+box placeholder.png::CompressedTexture2D::7415168788061779731::1734357261::1734357284::1::::<><>::
+box.jpeg::CompressedTexture2D::1464103763760013501::1734509947::1734509971::1::::<><>::
+box.jpg::CompressedTexture2D::3312074087749592653::1734354229::1734354328::1::::<><>::
+brick.jpg::CompressedTexture2D::1700089300222925682::1734354229::1734354328::1::::<><>::
+New Piskel.png::CompressedTexture2D::8541695896956121050::1734353205::1734353230::1::::<><>::
+player_idle.jpg::CompressedTexture2D::1662797090295444141::1734354426::1734354539::1::::<><>::
+Screenshot 2024-12-11 092148.png::CompressedTexture2D::7348854266269478591::1733905327::1733905420::1::::<><>::
+steel_plate.jpg::CompressedTexture2D::7426748017390076076::1734354229::1734354328::1::::<><>::
+tile placeholder.png::CompressedTexture2D::8786702639708540912::1734357042::1734357081::1::::<><>::
+tile_3frame.jpg::CompressedTexture2D::2037928080128712856::1734354229::1734354328::1::::<><>::
+tile_corner.jpg::CompressedTexture2D::3258480576268505865::1734354229::1734354328::1::::<><>::
+tile_full.jpg::CompressedTexture2D::7571674167727584156::1734354229::1734354328::1::::<><>::
+tile_one_side.jpg::CompressedTexture2D::5472709229226985972::1734354229::1734354328::1::::<><>::
+w3uwfbie.bmp::CompressedTexture2D::2370628270333268614::1733904340::1733905424::1::::<><>::
+Wall placeholder.png::CompressedTexture2D::8950815949687586708::1734508437::1734508470::1::::<><>::
+::res://Scenes/::1736778362
+box.tscn::PackedScene::6402788478416566735::1736778305::0::1::::<><>::res://scripts/box.gd<>uid://u4hts18kdfrp::::res://assets/box.jpeg
+checkpoint.tscn::PackedScene::4886491393099371189::1736778305::0::1::::<><>::res://scripts/checkpoint.gd<>uid://dtxwqo5elaj1s::::res://assets/New Piskel.png
+hud.tscn::PackedScene::3560533972934624323::1736778306::0::1::::<><>::res://scripts/hud.gd<>uid://ceq44r4c4vguq::::res://Scenes/UI.tscn
+player.tscn::PackedScene::4625268407189497726::1736778305::0::1::::<><>::res://scripts/player.gd<>uid://xxqa4cc1rml6::::res://assets/player_idle.jpg
+sokoban_lv_2.tscn::PackedScene::949575518318966019::1736778306::0::1::::<><>::uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
+sokoban_world.tscn::PackedScene::807626133500377168::1736778362::0::1::::<><>::uid://b65rq3d2a3oyw::::res://Scenes/player.tscn<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn
+UI.tscn::PackedScene::5088440304643495624::1736778306::0::1::::<><>::res://scripts/UI.gd
+walls.tscn::PackedScene::112395289134191323::1736778306::0::1::::<><>::res://scripts/walls.gd<>uid://yhshtc01saba::::res://assets/brick.jpg
+::res://scripts/::1736777984
+box.gd::GDScript::-1::1736777984::0::1::::Box<>Area2D<>::
+checkpoint.gd::GDScript::-1::1734353526::0::1::::<>Area2D<>::
+global_variables.gd::GDScript::-1::1734352319::0::1::::<>Node<>::
+hud.gd::GDScript::-1::1734520746::0::1::::<>CanvasLayer<>::
+player.gd::GDScript::-1::1734511700::0::1::::Player<>CharacterBody2D<>::
+sokoban_world.gd::GDScript::-1::1736776087::0::1::::<>Node2D<>::
+UI.gd::GDScript::-1::1734520699::0::1::::<>Control<>::
+walls.gd::GDScript::-1::1734511352::0::1::::Wall<>Area2D<>::
