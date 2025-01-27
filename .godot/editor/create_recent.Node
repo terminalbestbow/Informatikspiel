@@ -1,3 +1,4 @@
+AudioStreamPlayer2D
 Node
 TileMap
 Button
@@ -11,4 +12,3 @@ Label
 VBoxContainer
 HBoxContainer
 AnimatedSprite2D
-CharacterBody2D

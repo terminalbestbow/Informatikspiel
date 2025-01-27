@@ -1,8 +1,5 @@
-res://Scenes/sokoban_lv_3.tscn
-res://sokoban_tiles.tres
-res://scripts/sokoban_world.gd
-res://Scenes/sokoban_lv_4.tscn
 res://Scenes/sokoban_world.tscn
+res://sokoban_tiles.tres
 res://Scenes/player.tscn
 res://Scenes/box.tscn
 res://Scenes/checkpoint.tscn
@@ -10,4 +7,6 @@ res://Scenes/UI.tscn
 res://Scenes/walls.tscn
 res://Scenes/hud.tscn
 res://Scenes/sokoban_lv_2.tscn
+res://Scenes/sokoban_lv_3.tscn
+res://Scenes/sokoban_lv_4.tscn
 res://Scenes/sokoban_lv_5.tscn

@@ -1,6 +1,10 @@
 class_name Player
 extends CharacterBody2D
 
+@onready var blocked = $blocked
+@onready var move = $move
+
+
 @onready var raycast = $RayCast2D
 var direction = Vector2.ZERO
 
@@ -10,6 +14,9 @@ func _physics_process(delta):
 
 	if direction and !raycast.is_colliding():
 		global_position += direction * 16
+		move.play()
+	if raycast.is_colliding() and direction:
+		blocked.play()
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	direction = Vector2.ZERO

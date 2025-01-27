@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://cglnwy5k4fs5t"]
+[gd_scene load_steps=6 format=3 uid="uid://cglnwy5k4fs5t"]
 
+[ext_resource type="Script" path="res://scripts/sokoban_world.gd" id="1_s4rlk"]
 [ext_resource type="TileSet" uid="uid://cpwnagj4rf5g0" path="res://sokoban_tiles.tres" id="1_tob3s"]
 [ext_resource type="PackedScene" uid="uid://cbvb2gao1s4gf" path="res://Scenes/checkpoint.tscn" id="2_4cdoq"]
 [ext_resource type="PackedScene" uid="uid://cxhs8xlvslj0b" path="res://Scenes/box.tscn" id="3_2vfnn"]
 [ext_resource type="PackedScene" uid="uid://b65rq3d2a3oyw" path="res://Scenes/player.tscn" id="4_1hhxg"]
 
-[node name="Node2D" type="Node2D"]
+[node name="sokoban_lv_4" type="Node2D"]
+script = ExtResource("1_s4rlk")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_tob3s")

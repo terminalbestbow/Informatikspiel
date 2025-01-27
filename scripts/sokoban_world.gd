@@ -7,15 +7,15 @@ func _ready():
 	print(Global.level)
 	match Global.level:
 		1:
-			Global.set_boxes_remaining(1) #3
+			Global.set_boxes_remaining(3) #3
 		2:
-			Global.set_boxes_remaining(1) #3
+			Global.set_boxes_remaining(3) #3
 		3:
-			Global.set_boxes_remaining(1) #6
+			Global.set_boxes_remaining(6) #6
 		4:
-			Global.set_boxes_remaining(1) #7
+			Global.set_boxes_remaining(7) #7
 		5:
-			Global.set_boxes_remaining(1) #14
+			Global.set_boxes_remaining(14) #14
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -26,11 +26,11 @@ func _process(_delta):
 			1:
 				next_level = load("res://Scenes/sokoban_lv_2.tscn").instantiate()
 			2:
-				next_level = load("res://Scenes/sokoban_lv_3.tcsn").instantiate()
+				next_level = load("res://Scenes/sokoban_lv_3.tscn").instantiate()
 			3:
-				next_level = load("res://Scenes/sokoban_lv_4.tcsn").instantiate()
+				next_level = load("res://Scenes/sokoban_lv_4.tscn").instantiate()
 			4:
-				next_level = load("res://Scenes/sokoban_lv_5.tcsn").instantiate()
+				next_level = load("res://Scenes/sokoban_lv_5.tscn").instantiate()
 		Global.level += 1
 		get_tree().get_root().add_child(next_level)
 		get_tree().current_scene = next_level

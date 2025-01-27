@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737532536
+::res://::1737980468
 icon.svg::CompressedTexture2D::9088708559724503890::1733904136::1733904146::1::::<><>::
-sokoban_tiles.tres::TileSet::5871879983835884021::1736927921::0::1::::<><>::uid://d0r3vpnjuqivk::::res://assets/Wall placeholder.png<>uid://dxglydjvvmoua::::res://assets/tile placeholder.png
+sokoban_tiles.tres::TileSet::5871879983835884021::1737541340::0::1::::<><>::uid://d0r3vpnjuqivk::::res://assets/Wall placeholder.png<>uid://dxglydjvvmoua::::res://assets/tile placeholder.png
 ::res://assets/::1734509971
 27georgefloyd-videoSixteenByNineJumbo1600.jpg::CompressedTexture2D::6599171941228015990::1733913048::1733913050::1::::<><>::
 box placeholder.png::CompressedTexture2D::7415168788061779731::1734357261::1734357284::1::::<><>::
@@ -19,22 +19,24 @@ tile_full.jpg::CompressedTexture2D::7571674167727584156::1734354229::1734354328:
 tile_one_side.jpg::CompressedTexture2D::5472709229226985972::1734354229::1734354328::1::::<><>::
 w3uwfbie.bmp::CompressedTexture2D::2370628270333268614::1733904340::1733905424::1::::<><>::
 Wall placeholder.png::CompressedTexture2D::8950815949687586708::1734508437::1734508470::1::::<><>::
-::res://Scenes/::1736930942
-box.tscn::PackedScene::6402788478416566735::1736930358::0::1::::<><>::res://scripts/box.gd<>uid://u4hts18kdfrp::::res://assets/box.jpeg
-checkpoint.tscn::PackedScene::4886491393099371189::1736930358::0::1::::<><>::res://scripts/checkpoint.gd<>uid://dtxwqo5elaj1s::::res://assets/New Piskel.png
-hud.tscn::PackedScene::3560533972934624323::1736930359::0::1::::<><>::res://scripts/hud.gd<>uid://ceq44r4c4vguq::::res://Scenes/UI.tscn
-player.tscn::PackedScene::4625268407189497726::1736930358::0::1::::<><>::res://scripts/player.gd<>uid://xxqa4cc1rml6::::res://assets/player_idle.jpg
-sokoban_lv_2.tscn::PackedScene::949575518318966019::1736930360::0::1::::<><>::uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
-sokoban_lv_3.tscn::PackedScene::7766405779756458938::1736930942::0::1::::<><>::uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres
-sokoban_world.tscn::PackedScene::807626133500377168::1736930477::0::1::::<><>::uid://b65rq3d2a3oyw::::res://Scenes/player.tscn<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn
-UI.tscn::PackedScene::5088440304643495624::1736930359::0::1::::<><>::res://scripts/UI.gd
-walls.tscn::PackedScene::112395289134191323::1736930359::0::1::::<><>::res://scripts/walls.gd<>uid://yhshtc01saba::::res://assets/brick.jpg
-::res://scripts/::1736930357
+::res://Scenes/::1737544740
+box.tscn::PackedScene::6402788478416566735::1737541696::0::1::::<><>::res://scripts/box.gd<>uid://u4hts18kdfrp::::res://assets/box.jpeg
+checkpoint.tscn::PackedScene::4886491393099371189::1737541696::0::1::::<><>::res://scripts/checkpoint.gd<>uid://dtxwqo5elaj1s::::res://assets/New Piskel.png
+hud.tscn::PackedScene::3560533972934624323::1737541697::0::1::::<><>::res://scripts/hud.gd<>uid://ceq44r4c4vguq::::res://Scenes/UI.tscn
+player.tscn::PackedScene::4625268407189497726::1737544740::0::1::::<><>::res://scripts/player.gd<>uid://xxqa4cc1rml6::::res://assets/player_idle.jpg
+sokoban_lv_2.tscn::PackedScene::949575518318966019::1737541697::0::1::::<><>::uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
+sokoban_lv_3.tscn::PackedScene::7766405779756458938::1737541697::0::1::::<><>::uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
+sokoban_lv_4.tscn::PackedScene::5217512500278787983::1737541855::0::1::::<><>::res://scripts/sokoban_world.gd<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
+sokoban_lv_5.tscn::PackedScene::4081551119874490228::1737541698::0::1::::<><>::uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>res://scripts/sokoban_world.gd<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
+sokoban_world.tscn::PackedScene::807626133500377168::1737541695::0::1::::<><>::uid://b65rq3d2a3oyw::::res://Scenes/player.tscn<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn
+UI.tscn::PackedScene::5088440304643495624::1737542403::0::1::::<><>::res://scripts/UI.gd
+walls.tscn::PackedScene::112395289134191323::1737541696::0::1::::<><>::res://scripts/walls.gd<>uid://yhshtc01saba::::res://assets/brick.jpg
+::res://scripts/::1737544740
 box.gd::GDScript::-1::1736929092::0::1::::Box<>Area2D<>::
 checkpoint.gd::GDScript::-1::1734353526::0::1::::<>Area2D<>::
 global_variables.gd::GDScript::-1::1736929791::0::1::::<>Node<>::
 hud.gd::GDScript::-1::1734520746::0::1::::<>CanvasLayer<>::
-player.gd::GDScript::-1::1734511700::0::1::::Player<>CharacterBody2D<>::
-sokoban_world.gd::GDScript::-1::1736930357::0::1::::<>Node2D<>::
-UI.gd::GDScript::-1::1734520699::0::1::::<>Control<>::
+player.gd::GDScript::-1::1737544740::0::1::::Player<>CharacterBody2D<>::
+sokoban_world.gd::GDScript::-1::1737541855::0::1::::<>Node2D<>::
+UI.gd::GDScript::-1::1737542403::0::1::::<>Control<>::
 walls.gd::GDScript::-1::1734511352::0::1::::Wall<>Area2D<>::
