@@ -10,3 +10,5 @@ res://Scenes/sokoban_lv_2.tscn
 res://Scenes/sokoban_lv_3.tscn
 res://Scenes/sokoban_lv_4.tscn
 res://Scenes/sokoban_lv_5.tscn
+res://scripts/box.gd
+res://scripts/player.gd

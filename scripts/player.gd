@@ -37,3 +37,6 @@ func _physics_process(delta):
 		facing = Global.directions.DOWN
 		raycast.target_position = Vector2(0, 16)
 
+func on_box_blocked():
+	print("blocked!")
+	blocked.play()
