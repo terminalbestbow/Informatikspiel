@@ -17,14 +17,17 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "sokoban"
-
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "Fünf Nächte bei Informatik
 "
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "sokoban"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
 
 [node name="bgm" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_a2r0u")

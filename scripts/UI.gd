@@ -14,3 +14,7 @@ func _process(delta):
 
 func _on_button_pressed():
 	reset.emit()
+
+
+func _on_audio_stream_player_2d_finished():
+	bgm.play()

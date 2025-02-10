@@ -31,6 +31,8 @@ func _process(_delta):
 				next_level = load("res://Scenes/sokoban_lv_4.tscn").instantiate()
 			4:
 				next_level = load("res://Scenes/sokoban_lv_5.tscn").instantiate()
+			5:
+				Hud.ui.bgm.stop()
 		Global.level += 1
 		get_tree().get_root().add_child(next_level)
 		get_tree().current_scene = next_level
