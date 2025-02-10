@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Informatikspiel"
-run/main_scene="res://Scenes/sokoban_world.tscn"
+run/main_scene="res://Scenes/mainmenu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 
 Global="*res://scripts/global_variables.gd"
 Hud="*res://Scenes/hud.tscn"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
 
 [input]
 

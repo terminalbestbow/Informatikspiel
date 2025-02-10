@@ -1,14 +1,14 @@
 AudioStreamPlayer2D
+VBoxContainer
+Button
+Label
 Node
 TileMap
-Button
 CanvasLayer
 RayCast2D
 Camera2D
 CollisionShape2D
 Sprite2D
 Area2D
-Label
-VBoxContainer
 HBoxContainer
 AnimatedSprite2D

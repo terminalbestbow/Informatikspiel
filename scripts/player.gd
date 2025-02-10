@@ -17,8 +17,6 @@ func _physics_process(delta):
 		move.play()
 	if raycast.is_colliding() and direction:
 		blocked.play()
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	direction = Vector2.ZERO
 	if Input.is_action_just_pressed("left"):
 		direction = Vector2(-1,0)
