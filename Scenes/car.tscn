@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://kr3wvuorbqie"]
+
+[ext_resource type="Texture2D" uid="uid://dqn4cafkipm01" path="res://assets/Autos/KotzgrÃ¼ner Wagen.png" id="1_3swpk"]
+
+[node name="Car" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, 0)
+rotation = 3.14159
+texture = ExtResource("1_3swpk")

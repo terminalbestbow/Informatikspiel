@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://drxly6ho66vc7"]
 
 [ext_resource type="Script" path="res://Main_Menu.gd" id="1_jkgpy"]
-[ext_resource type="AudioStream" uid="uid://c7a133b0a5254" path="res://assets/Musik/Lobby-.mp3" id="2_a2r0u"]
+[ext_resource type="AudioStream" uid="uid://c7a133b0a5254" path="res://Musik/Lobby-.mp3" id="2_a2r0u"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -28,9 +28,12 @@ text = "sokoban"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+text = "Autorenenn
+"
 
 [node name="bgm" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_a2r0u")
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
