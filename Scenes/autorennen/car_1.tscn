@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://gjgw08qvaprw"]
+
+[ext_resource type="Texture2D" uid="uid://dqn4cafkipm01" path="res://assets/Autos/KotzgrÃ¼ner Wagen.png" id="1_5x4ru"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2tm7"]
+size = Vector2(24, 46)
+
+[node name="Car1" type="PathFollow2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, 0)
+rotation = 3.14159
+scale = Vector2(4, 4)
+texture = ExtResource("1_5x4ru")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_d2tm7")

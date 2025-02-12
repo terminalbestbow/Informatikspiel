@@ -1,9 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739351906
+::res://::1739353038
 icon.svg::CompressedTexture2D::9088708559724503890::1733904136::1733904146::1::::<><>::
 Main_Menu.gd::GDScript::-1::1739173008::0::1::::<>Control<>::
-sokoban_tiles.tres::TileSet::5871879983835884021::1739196106::0::1::::<><>::uid://c40lh5ggsps86::::res://assets/Blöcke/Wand  2.png<>uid://bs8tkt4migk2h::::res://assets/Blöcke/Boden .png
-::res://assets/::1739197209
+sokoban_tiles.tres::TileSet::5871879983835884021::1739353038::0::1::::<><>::uid://c40lh5ggsps86::::res://assets/Blöcke/Wand  2.png<>uid://bs8tkt4migk2h::::res://assets/Blöcke/Boden .png
+::res://assets/::1739354698
+sternenhimmel.png::CompressedTexture2D::3914323141301292622::1739354660::1739354700::1::::<><>::
 tile placeholder.png::CompressedTexture2D::8786702639708540912::1734357042::1734357081::1::::<><>::
 Wall placeholder.png::CompressedTexture2D::8950815949687586708::1734508437::1734508470::1::::<><>::
 ::res://assets/Autos/::1739197589
@@ -36,20 +37,22 @@ KotzgrÃ¼ner Wagen.png::CompressedTexture2D::7402229139894361549::1739197123::
 KotzgrÃ¼ner Wagen.png::CompressedTexture2D::6428747215922060206::1739197119::1739197101::1::::<><>::
 Unbenanntes_Projekt(1).png::CompressedTexture2D::698255978694528310::1739197119::1739197101::1::::<><>::
 Unbenanntes_Projekt.png::CompressedTexture2D::6232644663663030131::1739197119::1739197101::1::::<><>::
-::res://Scenes/::1739197592
-autorennen.tscn::PackedScene::3004108545469453527::1739196774::0::1::::<><>::uid://dfemno3xwvr5p::::res://assets/Blöcke/Straße1.png<>uid://f5syq6omymej::::res://assets/Blöcke/Straße2.png
+::res://Scenes/::1739354161
+autorennen.tscn::PackedScene::3004108545469453527::1739354161::0::1::::<><>::uid://dfemno3xwvr5p::::res://assets/Blöcke/Straße1.png<>uid://f5syq6omymej::::res://assets/Blöcke/Straße2.png<>res://Scenes/carpath.gd<>uid://gjgw08qvaprw::::res://Scenes/autorennen/car_1.tscn
 box.tscn::PackedScene::6402788478416566735::1739196775::0::1::::<><>::res://scripts/box.gd<>uid://bjn23rpm67lod::::res://assets/Blöcke/Box.png
-car.tscn::PackedScene::738723356008021804::1739197592::0::1::::<><>::uid://dqn4cafkipm01::::res://assets/Autos/KotzgrÃ¼ner Wagen.png
 checkpoint.tscn::PackedScene::4886491393099371189::1739173525::0::1::::<><>::res://scripts/checkpoint.gd<>uid://cd8qjgjohoe4p::::res://assets/Blöcke/Checkpoint .png
 hud.tscn::PackedScene::3560533972934624323::1737983202::0::1::::<><>::res://scripts/hud.gd<>uid://ceq44r4c4vguq::::res://Scenes/UI.tscn
-mainmenu.tscn::PackedScene::8400665466959627680::1739196774::0::1::::<><>::res://Main_Menu.gd<>uid://c7a133b0a5254::::res://Musik/Lobby-.mp3
-player.tscn::PackedScene::4625268407189497726::1739196904::0::1::::<><>::res://scripts/player.gd<>uid://dmghf6tj6cf5d::::res://assets/Blöcke/running.png<>uid://7tpafshyft8r::::res://Musik/sfx/Kiste-gegen-wand-1.mp3<>uid://dgike2cslkqpl::::res://Musik/sfx/Gehen-ohne-Kiste-1.mp3
+mainmenu.tscn::PackedScene::8400665466959627680::1739354160::0::1::::<><>::res://Main_Menu.gd<>uid://c7a133b0a5254::::res://Musik/Lobby-.mp3
+player.tscn::PackedScene::4625268407189497726::1739354160::0::1::::<><>::res://scripts/player.gd<>uid://dmghf6tj6cf5d::::res://assets/Blöcke/running.png<>uid://7tpafshyft8r::::res://Musik/sfx/Kiste-gegen-wand-1.mp3<>uid://dgike2cslkqpl::::res://Musik/sfx/Gehen-ohne-Kiste-1.mp3
+carpath.gd::GDScript::-1::1739353637::0::1::::<>Path2D<>::
 sokoban_lv_2.tscn::PackedScene::949575518318966019::1739173526::0::1::::<><>::uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
 sokoban_lv_3.tscn::PackedScene::7766405779756458938::1739173526::0::1::::<><>::uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
 sokoban_lv_4.tscn::PackedScene::5217512500278787983::1739173526::0::1::::<><>::res://scripts/sokoban_world.gd<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
 sokoban_lv_5.tscn::PackedScene::4081551119874490228::1739173526::0::1::::<><>::uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>res://scripts/sokoban_world.gd<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
-sokoban_world.tscn::PackedScene::807626133500377168::1739196774::0::1::::<><>::uid://b65rq3d2a3oyw::::res://Scenes/player.tscn<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn
-UI.tscn::PackedScene::5088440304643495624::1739196914::0::1::::<><>::res://scripts/UI.gd<>uid://b1iullhrlb0ff::::res://Musik/Level-.mp3
+sokoban_world.tscn::PackedScene::807626133500377168::1739354160::0::1::::<><>::uid://b65rq3d2a3oyw::::res://Scenes/player.tscn<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn
+UI.tscn::PackedScene::5088440304643495624::1739354161::0::1::::<><>::res://scripts/UI.gd<>uid://b1iullhrlb0ff::::res://Musik/Level-.mp3
+::res://Scenes/autorennen/::1739354162
+car_1.tscn::PackedScene::440117415854585892::1739354161::0::1::::<><>::uid://dqn4cafkipm01::::res://assets/Autos/KotzgrÃ¼ner Wagen.png
 ::res://scripts/::1739196341
 box.gd::GDScript::-1::1737983196::0::1::::Box<>Area2D<>::
 checkpoint.gd::GDScript::-1::1734353526::0::1::::<>Area2D<>::

@@ -1,5 +1,10 @@
-Node
+TextureRect
+Camera2D
+CollisionShape2D
 Sprite2D
+PathFollow2D
+Path2D
+Node
 AnimatedSprite2D
 CharacterBody2D
 PanelContainer
@@ -7,8 +12,3 @@ Label
 TileMap
 Button
 AudioStreamPlayer2D
-VBoxContainer
-CanvasLayer
-RayCast2D
-Camera2D
-CollisionShape2D
