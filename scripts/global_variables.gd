@@ -1,8 +1,13 @@
 extends Node
 
+# sokoban
 var level = 1
 var boxes_remaining = 0
 enum directions {UP, DOWN, LEFT, RIGHT}
+var checkpoint_time := 0.0
+
+#autorennen
+var scroll_speed = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -11,8 +11,10 @@
 script = ExtResource("1_s6kvu")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -37.0
+offset_top = -16.0
+offset_right = 923.0
+offset_bottom = 524.0
 texture = ExtResource("2_3myno")
 
 [node name="Checkpoints" type="Node" parent="."]

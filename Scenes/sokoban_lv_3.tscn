@@ -1,13 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://diwdtlgtybxdq"]
+[gd_scene load_steps=7 format=3 uid="uid://diwdtlgtybxdq"]
 
 [ext_resource type="TileSet" uid="uid://cpwnagj4rf5g0" path="res://sokoban_tiles.tres" id="1_6b3ov"]
 [ext_resource type="PackedScene" uid="uid://cbvb2gao1s4gf" path="res://Scenes/checkpoint.tscn" id="1_fa16t"]
 [ext_resource type="Script" path="res://scripts/sokoban_world.gd" id="1_vhsbx"]
 [ext_resource type="PackedScene" uid="uid://cxhs8xlvslj0b" path="res://Scenes/box.tscn" id="2_ig0ko"]
+[ext_resource type="Texture2D" uid="uid://bv1elh1bts8kw" path="res://assets/sternenhimmel.png" id="2_porgd"]
 [ext_resource type="PackedScene" uid="uid://b65rq3d2a3oyw" path="res://Scenes/player.tscn" id="4_57avq"]
 
 [node name="sokoban_lv_3" type="Node2D"]
 script = ExtResource("1_vhsbx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -424.0
+offset_top = -124.0
+offset_right = 536.0
+offset_bottom = 416.0
+texture = ExtResource("2_porgd")
 
 [node name="checkpoints" type="Node" parent="."]
 

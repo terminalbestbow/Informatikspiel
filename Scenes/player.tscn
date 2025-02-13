@@ -87,7 +87,7 @@ autoplay = "new_animation"
 shape = SubResource("RectangleShape2D_glcal")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3, 3)
+zoom = Vector2(4, 4)
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(0, 16)
@@ -100,3 +100,12 @@ volume_db = -80.0
 [node name="move" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_ranek")
 volume_db = -80.0
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+z_index = -4
+amount = 50
+speed_scale = 0.7
+emission_shape = 3
+emission_rect_extents = Vector2(1600, 900)
+scale_amount_min = 2.0
+scale_amount_max = 2.0

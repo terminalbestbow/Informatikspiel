@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbs4l371spsbg"]
+
+[ext_resource type="Script" path="res://Scenes/autorennen/car_player.gd" id="1_fkt0g"]
+[ext_resource type="Texture2D" uid="uid://boo7r0rti8nq3" path="res://assets/Autos/player_car.png" id="1_mb5vl"]
+[ext_resource type="Texture2D" uid="uid://c71b1emt6d5st" path="res://assets/UI/button.png" id="3_p7ycm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hvxqr"]
+size = Vector2(24, 48)
+
+[node name="Car_player" type="CharacterBody2D"]
+scale = Vector2(0.32, 0.32)
+script = ExtResource("1_fkt0g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 3.14159
+texture = ExtResource("1_mb5vl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_hvxqr")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(0.5, 0.5)
+zoom = Vector2(5, 5)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+
+[node name="buttons" type="Node2D" parent="."]
+position = Vector2(0, 80)
+scale = Vector2(3, 3)
+
+[node name="Panel" type="Panel" parent="buttons"]
+offset_left = 200.0
+offset_top = 50.0
+offset_right = 230.0
+offset_bottom = 86.0
+rotation = 1.5708
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="buttons/Panel"]
+scale = Vector2(6, 6)
+texture_normal = ExtResource("3_p7ycm")
+action = "right"
+
+[node name="Panel2" type="Panel" parent="buttons"]
+offset_left = -200.0
+offset_top = 80.0
+offset_right = -170.0
+offset_bottom = 116.0
+rotation = -1.5708
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="buttons/Panel2"]
+scale = Vector2(6, 6)
+texture_normal = ExtResource("3_p7ycm")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

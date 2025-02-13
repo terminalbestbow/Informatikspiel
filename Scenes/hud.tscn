@@ -9,3 +9,4 @@ script = ExtResource("1_aw2or")
 [node name="Control" parent="." instance=ExtResource("1_liwg7")]
 
 [connection signal="reset" from="Control" to="." method="_on_control_reset"]
+[connection signal="reset_all" from="Control" to="." method="_on_control_reset_all"]

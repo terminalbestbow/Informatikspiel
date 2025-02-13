@@ -14,6 +14,7 @@ func _process(delta):
 
 
 func _on_button_pressed():
+	Hud.ui.endscreen.hide()
 	var next_level = load("res://Scenes/sokoban_world.tscn").instantiate()
 	get_tree().get_root().add_child(next_level)
 	get_tree().current_scene = next_level
@@ -24,7 +25,7 @@ func _on_button_pressed():
 
 
 func _on_button_2_pressed():
-	var next_level = load("res://Scenes/autorennen.tscn").instantiate()
+	var next_level = load("res://Scenes/autorennen/autorennen.tscn").instantiate()
 	get_tree().get_root().add_child(next_level)
 	get_tree().current_scene = next_level
 	get_tree().reload_current_scene()

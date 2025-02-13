@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://drxly6ho66vc7"]
+[gd_scene load_steps=4 format=3 uid="uid://drxly6ho66vc7"]
 
 [ext_resource type="Script" path="res://Main_Menu.gd" id="1_jkgpy"]
 [ext_resource type="AudioStream" uid="uid://c7a133b0a5254" path="res://Musik/Lobby-.mp3" id="2_a2r0u"]
+[ext_resource type="Theme" uid="uid://swb0sx82vwoq" path="res://default_theme.tres" id="2_irfaj"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -12,28 +13,40 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jkgpy")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="VBoxContainer"]
-layout_mode = 2
-text = "Fünf Nächte bei Informatik
-"
-
-[node name="Button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "sokoban"
-
-[node name="Button2" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "Autorenenn
-"
-
 [node name="bgm" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_a2r0u")
 autoplay = true
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -165.0
+offset_right = 165.0
+offset_bottom = 72.0
+grow_horizontal = 2
+scale = Vector2(2, 2)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_irfaj")
+text = "Fünf Nächte bei Informatik
+"
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_irfaj")
+text = "sokoban"
+
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_irfaj")
+text = "Autorenenn
+"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
