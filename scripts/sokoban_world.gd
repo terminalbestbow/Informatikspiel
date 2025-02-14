@@ -1,7 +1,10 @@
 extends Node2D
+class_name sokoban_level
+
 @onready var player = $Player
 var next_level
 @onready var texture_rect = $TextureRect
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -26,7 +29,7 @@ func _ready():
 func _process(_delta):
 	Hud.ui.remaining_label.text = " Verbleibende Boxen: " + str(Global.boxes_remaining)
 	if Global.boxes_remaining == 0:
-		Hud.next_lvl()
+		Hud.next_lvl(false)
 
 func get_player():
 	return player

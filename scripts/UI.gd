@@ -1,10 +1,10 @@
 extends Control
-@onready var remaining_label = $VBoxContainer/HBoxContainer/Label
+@onready var remaining_label = $VBoxContainer/HBoxContainer2/PanelContainer2/Label
 @onready var bgm = $AudioStreamPlayer2D
 signal reset
 signal reset_all
 @onready var v_box_container = $VBoxContainer
-@onready var label_2 = $VBoxContainer/PanelContainer/Label2
+@onready var label_2 = $VBoxContainer/HBoxContainer2/PanelContainer/Label2
 
 # durchgespielt
 @onready var endscreen = $endscreen
@@ -49,6 +49,9 @@ func _on_new_game_pressed():
 
 
 func _on_main_menu_pressed():
+	time_elapsed = 0.0
+	self.hide()
+	get_parent()._on_settings_button_pressed()
 	bgm.stop()
 	var next_level = load("res://Scenes/mainmenu.tscn").instantiate()
 	get_tree().get_root().add_child(next_level)

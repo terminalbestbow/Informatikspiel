@@ -29,27 +29,19 @@ wait_time = 0.2
 position = Vector2(0, 80)
 scale = Vector2(3, 3)
 
-[node name="Panel" type="Panel" parent="buttons"]
-offset_left = 200.0
-offset_top = 50.0
-offset_right = 230.0
-offset_bottom = 86.0
+[node name="right" type="TouchScreenButton" parent="buttons"]
+position = Vector2(100, 30)
 rotation = 1.5708
-
-[node name="TouchScreenButton" type="TouchScreenButton" parent="buttons/Panel"]
 scale = Vector2(6, 6)
 texture_normal = ExtResource("3_p7ycm")
 action = "right"
+visibility_mode = 1
 
-[node name="Panel2" type="Panel" parent="buttons"]
-offset_left = -200.0
-offset_top = 80.0
-offset_right = -170.0
-offset_bottom = 116.0
+[node name="left" type="TouchScreenButton" parent="buttons"]
+position = Vector2(-100, 60)
 rotation = -1.5708
-
-[node name="TouchScreenButton" type="TouchScreenButton" parent="buttons/Panel2"]
 scale = Vector2(6, 6)
 texture_normal = ExtResource("3_p7ycm")
+visibility_mode = 1
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -9,3 +9,5 @@ res://Scenes/hud.tscn
 res://scripts/sokoban_world.gd
 res://scripts/global_variables.gd
 res://scripts/UI.gd
+res://scripts/hud.gd
+res://Main_Menu.gd
