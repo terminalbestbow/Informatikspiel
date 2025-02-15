@@ -27,7 +27,7 @@ zoom = Vector2(5, 5)
 wait_time = 0.2
 
 [node name="buttons" type="Node2D" parent="."]
-position = Vector2(0, -110)
+position = Vector2(0, -109.375)
 scale = Vector2(3, 3)
 
 [node name="right" type="TouchScreenButton" parent="buttons"]
@@ -43,6 +43,7 @@ position = Vector2(-100, 60)
 rotation = -1.5708
 scale = Vector2(6, 6)
 texture_normal = ExtResource("3_p7ycm")
+action = "left"
 visibility_mode = 1
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

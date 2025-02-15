@@ -16,7 +16,7 @@ func spawn_wave():
 	var dir_name := "res://Scenes/autorennen/enemies/"
 	var dir := DirAccess.open(dir_name)
 	var file_names := dir.get_files()
-	var random_file = load(dir_name + file_names[randi_range(0, file_names.size() - 1)]).instantiate()
+	var random_file = load((dir_name + file_names[randi_range(0, file_names.size() - 1)]).trim_suffix(".remap")).instantiate()
 	match enemies_number:
 		1:
 			var spawn_lane = lanes.values().pick_random()
