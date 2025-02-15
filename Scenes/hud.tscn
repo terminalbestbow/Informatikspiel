@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqy0qelhhhdot"]
+[gd_scene load_steps=6 format=3 uid="uid://bqy0qelhhhdot"]
 
 [ext_resource type="Script" path="res://scripts/hud.gd" id="1_aw2or"]
 [ext_resource type="PackedScene" uid="uid://ceq44r4c4vguq" path="res://Scenes/UI.tscn" id="1_liwg7"]
 [ext_resource type="Theme" uid="uid://swb0sx82vwoq" path="res://default_theme.tres" id="3_6ndat"]
 [ext_resource type="Texture2D" uid="uid://cebsee781hsw" path="res://assets/UI/settings_gear.png" id="4_flyty"]
+
+[sub_resource type="Theme" id="Theme_w0m32"]
 
 [node name="HUD" type="CanvasLayer"]
 process_mode = 3
@@ -13,6 +15,7 @@ script = ExtResource("1_aw2or")
 visible = false
 
 [node name="settings" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchor_left = 0.567
 anchor_top = 0.544
@@ -60,7 +63,62 @@ grow_horizontal = 0
 scale = Vector2(4, 4)
 texture_normal = ExtResource("4_flyty")
 
+[node name="crashscreen" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -290.0
+offset_top = -35.5
+offset_right = 290.0
+offset_bottom = 35.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(290, 35)
+size_flags_horizontal = 4
+theme = ExtResource("3_6ndat")
+
+[node name="PanelContainer" type="PanelContainer" parent="crashscreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="crashscreen/PanelContainer"]
+layout_mode = 2
+
+[node name="crash_label" type="Label" parent="crashscreen/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Du hast ganze x Sekunden keinen Unfall gebaut!"
+
+[node name="restart_car" type="Button" parent="crashscreen/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Neues Spiel"
+
+[node name="main_menu_button" type="Button" parent="crashscreen/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Zum Hauptmenü"
+
+[node name="car_timer" type="PanelContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -0.5
+offset_right = 0.5
+offset_bottom = 16.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+theme = SubResource("Theme_w0m32")
+
+[node name="car_time" type="Label" parent="car_timer"]
+layout_mode = 2
+theme = ExtResource("3_6ndat")
+
 [connection signal="reset" from="Control" to="." method="_on_control_reset"]
 [connection signal="reset_all" from="Control" to="." method="_on_control_reset_all"]
 [connection signal="pressed" from="settings/PanelContainer/VBoxContainer/main_menu_button" to="." method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="settings_button" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="crashscreen/PanelContainer/VBoxContainer/restart_car" to="." method="_on_restart_car_pressed"]
+[connection signal="pressed" from="crashscreen/PanelContainer/VBoxContainer/main_menu_button" to="." method="_on_main_menu_button_pressed"]

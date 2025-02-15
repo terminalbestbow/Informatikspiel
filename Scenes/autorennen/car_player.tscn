@@ -20,13 +20,14 @@ shape = SubResource("RectangleShape2D_hvxqr")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(0.5, 0.5)
+offset = Vector2(0, -50)
 zoom = Vector2(5, 5)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.2
 
 [node name="buttons" type="Node2D" parent="."]
-position = Vector2(0, 80)
+position = Vector2(0, -110)
 scale = Vector2(3, 3)
 
 [node name="right" type="TouchScreenButton" parent="buttons"]

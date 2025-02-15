@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name car_player
 @onready var move_timer = $Timer
 
 var tween

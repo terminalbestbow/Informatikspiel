@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvm8y3oxw3rxf"
-path="res://.godot/imported/asphalt_road_unf.png-f5828f14393885d10e96b4b260634976.ctex"
+uid="uid://cfd1qryylwyvw"
+path="res://.godot/imported/enemy_car.png-f5768c6e8df462ba8079cffcb741921a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/asphalt_road_unf.png"
-dest_files=["res://.godot/imported/asphalt_road_unf.png-f5828f14393885d10e96b4b260634976.ctex"]
+source_file="res://assets/Autos/enemy_car.png"
+dest_files=["res://.godot/imported/enemy_car.png-f5768c6e8df462ba8079cffcb741921a.ctex"]
 
 [params]
 

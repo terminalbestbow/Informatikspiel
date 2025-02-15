@@ -29,3 +29,4 @@ func _on_button_2_pressed():
 	get_tree().reload_current_scene()
 	get_tree().get_root().get_children()[2].queue_free()
 	bgm.stop()
+	Hud.autorennen()

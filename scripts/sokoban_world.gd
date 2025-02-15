@@ -12,6 +12,7 @@ func _ready():
 	print(Global.level)
 	match Global.level:
 		1:
+			print(get_tree().current_scene)
 			Global.set_boxes_remaining(3) #3
 			Hud.ui.is_stopped = false
 			Hud.ui.bgm.play()

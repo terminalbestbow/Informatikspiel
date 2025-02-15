@@ -11,3 +11,11 @@ res://scripts/global_variables.gd
 res://scripts/UI.gd
 res://scripts/hud.gd
 res://Main_Menu.gd
+res://Scenes/autorennen/road_parent.gd
+res://enemy_car_1.gd
+res://Scenes/autorennen/enemy_car_1.tscn
+res://Scenes/autorennen/autorennen.gd
+res://Scenes/autorennen/enemies/enemy_car_1.tscn
+res://Scenes/autorennen/enemies/enemy.gd
+res://Scenes/autorennen/enemy.gd
+res://Scenes/autorennen/car_player.gd
