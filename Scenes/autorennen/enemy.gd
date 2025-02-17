@@ -1,8 +1,10 @@
 extends Area2D
 class_name enemy_car
 var was_visible := false
+@onready var shader = load("res://scripts/car_shader.gdshader")
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Sprite2D.material.shader = shader
 	$Sprite2D.material.set_shader_parameter("replacement_color", Vector3(randf_range(0.0, 1), randf_range(0.0, 1), randf_range(0.0, 1)))
 
 

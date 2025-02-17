@@ -14,6 +14,7 @@ var car_paused := true
 @onready var car_timer = $car_timer
 var autorennen_active = false
 @onready var crash_label = $crashscreen/PanelContainer/VBoxContainer/crash_label
+var sokoban_active = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -26,6 +27,7 @@ func _ready():
 func sokoban():
 	ui.show()
 	settings_button.show()
+	sokoban_active = true
 
 func autorennen():
 	car_timer.show()
@@ -98,22 +100,24 @@ func next_lvl(reset):
 
 
 func _on_settings_button_pressed():
-	if in_settings:
-		car_paused = true
-		settings.hide()
-		get_tree().paused = false
-		in_settings = false
-		if get_tree().current_scene is sokoban_level:
-			ui.is_stopped = false
-	else:
-		car_paused = true
-		ui.is_stopped = true
-		settings.show()
-		get_tree().paused = true
-		in_settings = true
+	if !autorennen_active or sokoban_active:
+		if in_settings:
+			car_paused = true
+			settings.hide()
+			get_tree().paused = false
+			in_settings = false
+			if get_tree().current_scene is sokoban_level:
+				ui.is_stopped = false
+		else:
+			car_paused = true
+			ui.is_stopped = true
+			settings.show()
+			get_tree().paused = true
+			in_settings = true
 
 
 func _on_main_menu_button_pressed():
+	sokoban_active = false
 	car_timer.hide()
 	cartime = 0.0
 	crashscreen.hide()

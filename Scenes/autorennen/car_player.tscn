@@ -1,8 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbs4l371spsbg"]
+[gd_scene load_steps=7 format=3 uid="uid://dbs4l371spsbg"]
 
 [ext_resource type="Script" path="res://Scenes/autorennen/car_player.gd" id="1_fkt0g"]
-[ext_resource type="Texture2D" uid="uid://boo7r0rti8nq3" path="res://assets/Autos/player_car.png" id="1_mb5vl"]
+[ext_resource type="Shader" path="res://scripts/player_car_shader.gdshader" id="2_vej0t"]
+[ext_resource type="Texture2D" uid="uid://cfd1qryylwyvw" path="res://assets/Autos/enemy_car.png" id="3_34ri8"]
 [ext_resource type="Texture2D" uid="uid://c71b1emt6d5st" path="res://assets/UI/button.png" id="3_p7ycm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cgjkq"]
+shader = ExtResource("2_vej0t")
+shader_parameter/timescale = 2.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hvxqr"]
 size = Vector2(24, 48)
@@ -12,10 +17,12 @@ scale = Vector2(0.32, 0.32)
 script = ExtResource("1_fkt0g")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_cgjkq")
 rotation = 3.14159
-texture = ExtResource("1_mb5vl")
+texture = ExtResource("3_34ri8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_hvxqr")
 
 [node name="Camera2D" type="Camera2D" parent="."]

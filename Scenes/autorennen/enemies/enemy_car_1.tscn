@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cfd1qryylwyvw" path="res://assets/Autos/enemy_car.png" id="2_ei7r8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jhojn"]
+resource_local_to_scene = true
 shader = ExtResource("2_05haf")
 shader_parameter/replacement_color = null
 
