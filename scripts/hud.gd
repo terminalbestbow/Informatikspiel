@@ -34,6 +34,7 @@ func autorennen():
 	crashscreen.hide()
 	print(get_tree().current_scene)
 	print(get_tree().current_scene is autorennen_level)
+	settings_button.show()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if autorennen_active and !car_paused:

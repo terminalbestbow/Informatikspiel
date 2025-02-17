@@ -1,11 +1,11 @@
 [gd_scene load_steps=6 format=3 uid="uid://b3bsfh48yy25j"]
 
-[ext_resource type="Shader" uid="uid://b48710dts4xav" path="res://scripts/car_shader.tres" id="1_ky317"]
 [ext_resource type="Script" path="res://Scenes/autorennen/enemy.gd" id="1_p0ig6"]
+[ext_resource type="Shader" path="res://scripts/car_shader.gdshader" id="2_05haf"]
 [ext_resource type="Texture2D" uid="uid://cfd1qryylwyvw" path="res://assets/Autos/enemy_car.png" id="2_ei7r8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jhojn"]
-shader = ExtResource("1_ky317")
+shader = ExtResource("2_05haf")
 shader_parameter/replacement_color = null
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u2rl0"]

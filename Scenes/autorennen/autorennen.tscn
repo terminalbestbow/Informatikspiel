@@ -28,6 +28,7 @@ scale = Vector2(0.5, 0.5)
 [node name="obstacles" type="Node" parent="."]
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
 autostart = true
 
 [connection signal="screen_entered" from="road_parent/road/VisibleOnScreenEnabler2D" to="road_parent/road" method="_on_visible_on_screen_enabler_2d_screen_entered"]

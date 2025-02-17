@@ -8,7 +8,7 @@ var checkpoint_time := 0.0
 
 #autorennen
 var scroll_speed = 3
-var enemy_car_speed = 4
+var enemy_car_speed = 2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
