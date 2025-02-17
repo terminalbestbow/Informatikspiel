@@ -3,7 +3,7 @@ class_name enemy_car
 var was_visible := false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$Sprite2D.material.set_shader_parameter("replacement_color", Vector4(randf_range(0.0, 255.0), randf_range(0.0, 255.0), randf_range(0.0, 255.0), 1))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

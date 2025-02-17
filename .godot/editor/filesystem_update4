@@ -7,4 +7,8 @@ res://Scenes/UI.tscn
 res://Scenes/hud.tscn
 res://Scenes/autorennen/car_player.tscn
 res://Scenes/autorennen/enemies/enemy_car_1.tscn
-res://Scenes/autorennen/autorennen.gd
+res://scripts/global_variables.gd
+res://scripts/car_shader.gdshader
+res://Scenes/sokoban_lv_4.tscn
+res://scripts/car_shader.tres
+res://Scenes/autorennen/enemy.gd
