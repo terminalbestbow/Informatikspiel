@@ -1,9 +1,44 @@
-[gd_scene load_steps=7 format=3 uid="uid://dbs4l371spsbg"]
+[gd_scene load_steps=15 format=3 uid="uid://dbs4l371spsbg"]
 
 [ext_resource type="Script" path="res://Scenes/autorennen/car_player.gd" id="1_fkt0g"]
+[ext_resource type="Shader" path="res://Scenes/autorennen/chroma_particles.gdshader" id="2_s6qr3"]
 [ext_resource type="Shader" path="res://scripts/player_car_shader.gdshader" id="2_vej0t"]
 [ext_resource type="Texture2D" uid="uid://cfd1qryylwyvw" path="res://assets/Autos/enemy_car.png" id="3_34ri8"]
 [ext_resource type="Texture2D" uid="uid://c71b1emt6d5st" path="res://assets/UI/button.png" id="3_p7ycm"]
+[ext_resource type="Shape2D" uid="uid://dfpwd42shim8u" path="res://default_button_shape.tres" id="5_20adl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ab3qe"]
+shader = ExtResource("2_s6qr3")
+shader_parameter/timescale = 3.0
+
+[sub_resource type="Curve" id="Curve_0rdbn"]
+min_value = -5.0
+max_value = 5.0
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.393333, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_0tect"]
+curve_x = SubResource("Curve_0rdbn")
+
+[sub_resource type="Curve" id="Curve_e56l5"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.142857), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_hxd0f"]
+curve = SubResource("Curve_e56l5")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2gdwb"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(12, 1, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+directional_velocity_min = 1.0
+directional_velocity_max = 1.0
+directional_velocity_curve = SubResource("CurveXYZTexture_0tect")
+gravity = Vector3(0, 300, 0)
+scale_min = 0.5
+scale_max = 0.8
+scale_curve = SubResource("CurveTexture_hxd0f")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cgjkq"]
 shader = ExtResource("2_vej0t")
@@ -15,6 +50,14 @@ size = Vector2(24, 48)
 [node name="Car_player" type="CharacterBody2D"]
 scale = Vector2(0.32, 0.32)
 script = ExtResource("1_fkt0g")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+material = SubResource("ShaderMaterial_ab3qe")
+position = Vector2(0, 21.875)
+amount = 100
+process_material = SubResource("ParticleProcessMaterial_2gdwb")
+lifetime = 0.5
+preprocess = 1.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_cgjkq")
@@ -42,6 +85,7 @@ position = Vector2(100, 30)
 rotation = 1.5708
 scale = Vector2(6, 6)
 texture_normal = ExtResource("3_p7ycm")
+shape = ExtResource("5_20adl")
 action = "right"
 visibility_mode = 1
 
@@ -50,6 +94,7 @@ position = Vector2(-100, 60)
 rotation = -1.5708
 scale = Vector2(6, 6)
 texture_normal = ExtResource("3_p7ycm")
+shape = ExtResource("5_20adl")
 action = "left"
 visibility_mode = 1
 

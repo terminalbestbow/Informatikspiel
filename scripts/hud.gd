@@ -15,6 +15,7 @@ var car_paused := true
 var autorennen_active = false
 @onready var crash_label = $crashscreen/PanelContainer/VBoxContainer/crash_label
 var sokoban_active = false
+var in_crash_screen := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -100,7 +101,7 @@ func next_lvl(reset):
 
 
 func _on_settings_button_pressed():
-	if !autorennen_active or sokoban_active:
+	if !in_crash_screen or sokoban_active:
 		if in_settings:
 			car_paused = true
 			settings.hide()
@@ -117,6 +118,7 @@ func _on_settings_button_pressed():
 
 
 func _on_main_menu_button_pressed():
+	in_crash_screen = false
 	sokoban_active = false
 	car_timer.hide()
 	cartime = 0.0
@@ -127,6 +129,7 @@ func _on_main_menu_button_pressed():
 
 
 func _on_restart_car_pressed():
+	in_crash_screen = false
 	car_paused = false
 	cartime = 0.0
 	crashscreen.hide()
@@ -134,6 +137,7 @@ func _on_restart_car_pressed():
 	get_tree().reload_current_scene()
 	
 func crashed():
+	in_crash_screen = true
 	get_tree().paused = true
 	car_paused = true
 	crash_label.text = "Du hast ganze " + str(cartime).pad_decimals(2) + "s keinen Unfall gebaut!"

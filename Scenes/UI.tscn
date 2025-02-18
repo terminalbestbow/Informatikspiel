@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://ceq44r4c4vguq"]
+[gd_scene load_steps=7 format=3 uid="uid://ceq44r4c4vguq"]
 
 [ext_resource type="Script" path="res://scripts/UI.gd" id="1_ajme7"]
 [ext_resource type="Theme" uid="uid://swb0sx82vwoq" path="res://default_theme.tres" id="2_2fo4u"]
 [ext_resource type="AudioStream" uid="uid://b1iullhrlb0ff" path="res://Musik/Level-.mp3" id="2_w2083"]
 [ext_resource type="Texture2D" uid="uid://c71b1emt6d5st" path="res://assets/UI/button.png" id="4_6r81y"]
+[ext_resource type="Shape2D" uid="uid://dfpwd42shim8u" path="res://default_button_shape.tres" id="5_2ppna"]
 
 [sub_resource type="Theme" id="Theme_c26cw"]
 
@@ -100,6 +101,8 @@ position = Vector2(-237.333, 70)
 rotation = -1.5708
 scale = Vector2(3, 3)
 texture_normal = ExtResource("4_6r81y")
+shape = ExtResource("5_2ppna")
+passby_press = true
 action = "left"
 visibility_mode = 1
 
@@ -108,6 +111,8 @@ position = Vector2(-200, 94)
 rotation = 3.14159
 scale = Vector2(3, 3)
 texture_normal = ExtResource("4_6r81y")
+shape = ExtResource("5_2ppna")
+passby_press = true
 action = "down"
 visibility_mode = 1
 
@@ -116,6 +121,8 @@ position = Vector2(-175, 55)
 rotation = 1.5708
 scale = Vector2(3, 3)
 texture_normal = ExtResource("4_6r81y")
+shape = ExtResource("5_2ppna")
+passby_press = true
 action = "right"
 visibility_mode = 1
 
@@ -123,6 +130,8 @@ visibility_mode = 1
 position = Vector2(-215, 31)
 scale = Vector2(3, 3)
 texture_normal = ExtResource("4_6r81y")
+shape = ExtResource("5_2ppna")
+passby_press = true
 action = "up"
 visibility_mode = 1
 

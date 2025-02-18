@@ -1,3 +1,4 @@
+GPUParticles2D
 VisibleOnScreenEnabler2D
 Timer
 Node
@@ -12,4 +13,3 @@ Control
 TextureButton
 HBoxContainer
 CenterContainer
-CPUParticles2D
