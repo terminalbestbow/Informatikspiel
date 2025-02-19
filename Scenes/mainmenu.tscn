@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://drxly6ho66vc7"]
 
 [ext_resource type="Script" path="res://Main_Menu.gd" id="1_jkgpy"]
-[ext_resource type="AudioStream" uid="uid://c7a133b0a5254" path="res://Musik/Lobby-.mp3" id="2_a2r0u"]
+[ext_resource type="AudioStream" uid="uid://d2v5pl8ywuxaq" path="res://Musik/Intro-2.mp3" id="2_1p4f0"]
 [ext_resource type="Theme" uid="uid://swb0sx82vwoq" path="res://default_theme.tres" id="2_irfaj"]
 
 [node name="Control" type="Control"]
@@ -14,7 +14,7 @@ grow_vertical = 2
 script = ExtResource("1_jkgpy")
 
 [node name="bgm" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("2_a2r0u")
+stream = ExtResource("2_1p4f0")
 autoplay = true
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
