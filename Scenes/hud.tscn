@@ -51,6 +51,7 @@ theme = ExtResource("3_6ndat")
 text = "Zum Hauptmenü"
 
 [node name="settings_button" type="TextureButton" parent="."]
+z_index = 5
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
