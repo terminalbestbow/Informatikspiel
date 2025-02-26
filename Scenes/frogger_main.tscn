@@ -1,7 +1,14 @@
-[gd_scene format=3 uid="uid://c6pksbi7t732s"]
+[gd_scene load_steps=3 format=3 uid="uid://c6pksbi7t732s"]
+
+[ext_resource type="Texture2D" uid="uid://dcd4vffojcd1h" path="res://assets/frogger_lv_1_bg.png" id="1_ro8ea"]
+[ext_resource type="PackedScene" uid="uid://b11gqor3ng7am" path="res://Scenes/frogger_player.tscn" id="2_jwaqr"]
 
 [node name="FroggerMain" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("1_ro8ea")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_jwaqr")]
+position = Vector2(4, 120)
