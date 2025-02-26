@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqy0qelhhhdot"]
+[gd_scene load_steps=7 format=3 uid="uid://bqy0qelhhhdot"]
 
 [ext_resource type="Script" path="res://scripts/hud.gd" id="1_aw2or"]
 [ext_resource type="PackedScene" uid="uid://ceq44r4c4vguq" path="res://Scenes/UI.tscn" id="1_liwg7"]
 [ext_resource type="Theme" uid="uid://swb0sx82vwoq" path="res://default_theme.tres" id="3_6ndat"]
 [ext_resource type="Texture2D" uid="uid://cebsee781hsw" path="res://assets/UI/settings_gear.png" id="4_flyty"]
+[ext_resource type="AudioStream" uid="uid://c33gbp7f5qb7a" path="res://Musik/Autorennen- 2.mp3" id="5_cu0d3"]
 
 [sub_resource type="Theme" id="Theme_w0m32"]
 
@@ -118,6 +119,9 @@ theme = SubResource("Theme_w0m32")
 [node name="car_time" type="Label" parent="car_timer"]
 layout_mode = 2
 theme = ExtResource("3_6ndat")
+
+[node name="car_bgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_cu0d3")
 
 [connection signal="reset" from="Control" to="." method="_on_control_reset"]
 [connection signal="reset_all" from="Control" to="." method="_on_control_reset_all"]

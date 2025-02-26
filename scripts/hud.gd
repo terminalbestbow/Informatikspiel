@@ -1,5 +1,6 @@
 extends CanvasLayer
 @onready var settings_button = $settings_button
+@onready var car_bgm = $car_bgm
 
 @onready var settings = $settings
 @onready var ui = $Control
@@ -31,6 +32,7 @@ func sokoban():
 	sokoban_active = true
 
 func autorennen():
+	car_bgm.play()
 	car_timer.show()
 	autorennen_active = true
 	car_paused = false
@@ -126,6 +128,7 @@ func _on_main_menu_button_pressed():
 	get_tree().paused = false
 	autorennen_active = false
 	ui._on_main_menu_pressed()
+	car_bgm.stop()
 
 
 func _on_restart_car_pressed():

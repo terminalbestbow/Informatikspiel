@@ -10,7 +10,7 @@ shader = ExtResource("2_05haf")
 shader_parameter/replacement_color = null
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u2rl0"]
-size = Vector2(25, 41)
+size = Vector2(22.5, 38)
 
 [node name="enemy_car_1" type="Area2D"]
 scale = Vector2(0.5, 0.5)

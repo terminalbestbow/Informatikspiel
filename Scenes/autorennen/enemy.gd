@@ -10,7 +10,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	position.y += Global.enemy_car_speed
+	position.y += Global.enemy_car_speed * delta
 
 
 func _on_visible_on_screen_enabler_2d_screen_exited():
