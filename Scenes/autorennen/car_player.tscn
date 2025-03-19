@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Scenes/autorennen/car_player.gd" id="1_fkt0g"]
 [ext_resource type="Shader" path="res://Scenes/autorennen/chroma_particles.gdshader" id="2_s6qr3"]
 [ext_resource type="Shader" path="res://scripts/player_car_shader.gdshader" id="2_vej0t"]
-[ext_resource type="Texture2D" uid="uid://cfd1qryylwyvw" path="res://assets/Autos/enemy_car.png" id="3_34ri8"]
 [ext_resource type="Texture2D" uid="uid://c71b1emt6d5st" path="res://assets/UI/button.png" id="3_p7ycm"]
+[ext_resource type="Texture2D" uid="uid://c4gj5htiw4k6f" path="res://assets/rakete.png" id="4_csx21"]
 [ext_resource type="Shape2D" uid="uid://dfpwd42shim8u" path="res://default_button_shape.tres" id="5_20adl"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ab3qe"]
@@ -36,8 +36,7 @@ directional_velocity_min = 1.0
 directional_velocity_max = 1.0
 directional_velocity_curve = SubResource("CurveXYZTexture_0tect")
 gravity = Vector3(0, 300, 0)
-scale_min = 0.5
-scale_max = 0.8
+scale_min = 0.8
 scale_curve = SubResource("CurveTexture_hxd0f")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cgjkq"]
@@ -61,8 +60,7 @@ preprocess = 1.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_cgjkq")
-rotation = 3.14159
-texture = ExtResource("3_34ri8")
+texture = ExtResource("4_csx21")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_hvxqr")

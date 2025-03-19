@@ -1,0 +1,24 @@
+extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+func _on_spawn_timer_timeout():
+	spawn_enemy()
+	
+func spawn_enemy():
+	var height = randi_range(0, 7)
+	var x_position = randi_range(0,1)
+	var balls : Frogger_Enemy = load("res://Scenes/frogger_enemy.tscn").instantiate()
+	add_child(balls)
+	balls.position = Vector2(128 + 9, height * 16 + 9)
+	balls.direction = balls.directions.LEFT
+	balls.my_speed = randf_range(1, 3)

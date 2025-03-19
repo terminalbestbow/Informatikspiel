@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcd4vffojcd1h"
-path="res://.godot/imported/frogger_lv_1_bg.png-5648decb741d0d74d06afb7d7ff1daeb.ctex"
+uid="uid://c4gj5htiw4k6f"
+path="res://.godot/imported/rakete.png-341723be04b4dbf18ba5962e7a334617.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/frogger_lv_1_bg.png"
-dest_files=["res://.godot/imported/frogger_lv_1_bg.png-5648decb741d0d74d06afb7d7ff1daeb.ctex"]
+source_file="res://assets/rakete.png"
+dest_files=["res://.godot/imported/rakete.png-341723be04b4dbf18ba5962e7a334617.ctex"]
 
 [params]
 
