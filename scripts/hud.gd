@@ -18,8 +18,14 @@ var autorennen_active = false
 var sokoban_active = false
 var in_crash_screen := false
 
+
+#frogger
+var frogger_dead := false
+@onready var frogger_deathscreen = $frogger_deathscreen
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	frogger_deathscreen.hide()
 	car_timer.hide()
 	crashscreen.hide()
 	ui.endscreen.hide()
@@ -103,7 +109,7 @@ func next_lvl(reset):
 
 
 func _on_settings_button_pressed():
-	if !in_crash_screen or sokoban_active:
+	if (!in_crash_screen or sokoban_active) && !frogger_dead:
 		if in_settings:
 			car_paused = true
 			settings.hide()
@@ -120,6 +126,8 @@ func _on_settings_button_pressed():
 
 
 func _on_main_menu_button_pressed():
+	frogger_dead = false
+	frogger_deathscreen.hide()
 	in_crash_screen = false
 	sokoban_active = false
 	car_timer.hide()
@@ -145,3 +153,15 @@ func crashed():
 	car_paused = true
 	crash_label.text = "Du hast ganze " + str(cartime).pad_decimals(2) + "s keinen Unfall gebaut!"
 	crashscreen.show()
+	
+func frogger_death():
+	get_tree().paused = true
+	frogger_dead = true
+	frogger_deathscreen.show()
+
+
+func _on_restart_frogger_pressed():
+	frogger_dead = false
+	frogger_deathscreen.hide()
+	get_tree().paused = false
+	get_tree().reload_current_scene()

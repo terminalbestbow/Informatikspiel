@@ -15,10 +15,10 @@ func _on_spawn_timer_timeout():
 	spawn_enemy()
 	
 func spawn_enemy():
-	var height = randi_range(0, 7)
+	var height = randi_range(1, 6)
 	var x_position = randi_range(0,1)
 	var balls : Frogger_Enemy = load("res://Scenes/frogger_enemy.tscn").instantiate()
 	add_child(balls)
-	balls.position = Vector2(128 + 9, height * 16 + 9)
+	balls.position = Vector2(128 + 9, height * 16 + 8)
 	balls.direction = balls.directions.LEFT
-	balls.my_speed = randf_range(1, 3)
+	#balls.my_speed = randf_range(1, 3)

@@ -20,17 +20,23 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("left"):
 		direction = Vector2(-1,0)
 		facing = Global.directions.LEFT
-		raycast.target_position = Vector2(-16, 0)
+		raycast.target_position = Vector2(-8, 0)
 	if Input.is_action_just_pressed("right"):
 		direction = Vector2(1,0)
 		facing = Global.directions.RIGHT
-		raycast.target_position = Vector2(16, 0)
+		raycast.target_position = Vector2(8, 0)
 	if Input.is_action_just_pressed("up"):
 		direction = Vector2(0,-1)
 		facing = Global.directions.UP
-		raycast.target_position = Vector2(0, -16)
+		raycast.target_position = Vector2(0, -8)
 	if Input.is_action_just_pressed("down"):
 		direction = Vector2(0,1)
 		facing = Global.directions.DOWN
-		raycast.target_position = Vector2(0, 16)
+		raycast.target_position = Vector2(0, 8)
 
+
+
+func _on_area_2d_area_entered(area):
+	if area is Frogger_Enemy_Area:
+		print("dead!")
+		Hud.frogger_death()

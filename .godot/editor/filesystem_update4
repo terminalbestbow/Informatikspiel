@@ -6,5 +6,9 @@ res://Scenes/autorennen/enemies/enemy_car_1.tscn
 res://Scenes/frogger_player.tscn
 res://Scenes/frogger_enemy.tscn
 res://Scenes/frogger_main.tscn
+res://Scenes/hud.tscn
+res://kammer.tscn
+res://kammer.gd
+res://Scenes/frogger_player.gd
+res://Scenes/frogger_enemy_area.gd
 res://Scenes/frogger_main.gd
-res://frogger_enemy.gd

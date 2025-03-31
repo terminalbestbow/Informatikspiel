@@ -1,12 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://b11gqor3ng7am"]
+[gd_scene load_steps=6 format=3 uid="uid://b11gqor3ng7am"]
 
 [ext_resource type="Script" path="res://Scenes/frogger_player.gd" id="1_50xkr"]
 [ext_resource type="Texture2D" uid="uid://dxglydjvvmoua" path="res://assets/tile placeholder.png" id="2_lrohq"]
 [ext_resource type="AudioStream" uid="uid://7tpafshyft8r" path="res://Musik/sfx/Kiste-gegen-wand-1.mp3" id="3_h8rp6"]
 [ext_resource type="AudioStream" uid="uid://dgike2cslkqpl" path="res://Musik/sfx/Gehen-ohne-Kiste-1.mp3" id="4_f1dh8"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aawyh"]
+size = Vector2(8, 8)
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
-scale = Vector2(0.5, 0.5)
 script = ExtResource("1_50xkr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -14,7 +16,7 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_lrohq")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(0, 16)
+target_position = Vector2(0, 8)
 collision_mask = 4
 
 [node name="blocked" type="AudioStreamPlayer2D" parent="."]
@@ -26,4 +28,11 @@ stream = ExtResource("4_f1dh8")
 volume_db = -80.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
+zoom = Vector2(8, 8)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_aawyh")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

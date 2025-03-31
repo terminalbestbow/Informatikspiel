@@ -1,97 +1,100 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1742376002
-default_button_shape.tres::RectangleShape2D::7542514632517333462::1739956964::0::1::::<><>::
-default_theme.tres::Theme::1308921840401392380::1739774822::0::1::::<><>::uid://5k8xqv5qw2qy::::res://assets/PixelOperator8.ttf
-export_presets.cfg::TextFile::-1::1739774822::0::1::::<><>::
-frogger_enemy.gd::GDScript::-1::1741168687::0::1::::Frogger_Enemy<>Node2D<>::
-icon.svg::CompressedTexture2D::9088708559724503890::1733904136::1739957586::1::::<><>::
-Main_Menu.gd::GDScript::-1::1739774799::0::1::::<>Control<>::
-sokoban_tiles.tres::TileSet::5871879983835884021::1741166319::0::1::::<><>::uid://c40lh5ggsps86::::res://assets/Blöcke/Wand  2.png<>uid://bs8tkt4migk2h::::res://assets/Blöcke/Boden .png
-::res://android/::1739774821
-::res://assets/::1741169456
-asphalt_road.png::CompressedTexture2D::43797929600357642::1739774822::1739774822::1::::<><>::
-PixelOperator8.ttf::FontFile::2128354694902510804::1739774821::1739774821::1::::<><>::
-rakete.png::CompressedTexture2D::6821304523574315091::1741167320::1741167366::1::::<><>::
-sternenhimmel.png::CompressedTexture2D::3914323141301292622::1739957332::1739957613::1::::<><>::
-tile placeholder.png::CompressedTexture2D::8786702639708540912::1734357042::1734357081::1::::<><>::
-Wall placeholder.png::CompressedTexture2D::8950815949687586708::1734508437::1734508470::1::::<><>::
-::res://assets/Autos/::1739775899
-enemy_car.png::CompressedTexture2D::5131586864431251232::1739775866::1739775899::1::::<><>::
-KotzgrÃ¼ner Wagen.png::CompressedTexture2D::8310884832658306964::1739197070::1739197211::1::::<><>::
-player_car.png::CompressedTexture2D::3399940425668006424::1739774821::1739774821::1::::<><>::
-::res://assets/Blöcke/::1739195712
-Boden .png::CompressedTexture2D::3719116859162413237::1738138986::1738139017::1::::<><>::
-Box.png::CompressedTexture2D::3046647464929142331::1738138985::1738139017::1::::<><>::
-Checkpoint .png::CompressedTexture2D::5052520237903026137::1738138986::1738139017::1::::<><>::
-Eisenblock.png::CompressedTexture2D::3911954374507060634::1738138986::1738139017::1::::<><>::
-running.png::CompressedTexture2D::8014350047204509171::1737983908::1739195698::1::::<><>::
-Straße1.png::CompressedTexture2D::7519216379176351287::1738138986::1738139017::1::::<><>::
-Straße2.png::CompressedTexture2D::414012204651097537::1738138986::1738139017::1::::<><>::
-tile_3frame.jpg::CompressedTexture2D::2037928080128712856::1734354229::1739195712::1::::<><>::
-tile_corner.jpg::CompressedTexture2D::3258480576268505865::1734354229::1739195712::1::::<><>::
-tile_full.jpg::CompressedTexture2D::7571674167727584156::1734354229::1739195712::1::::<><>::
-tile_one_side.jpg::CompressedTexture2D::5472709229226985972::1734354229::1739195712::1::::<><>::
-Wand  2.png::CompressedTexture2D::6860609249485009953::1738138986::1738139018::1::::<><>::
-::res://assets/UI/::1739774822
-button.png::CompressedTexture2D::7072665562578992599::1739774822::1739774822::1::::<><>::
-settings_gear.png::CompressedTexture2D::148728277347039990::1739774822::1739774822::1::::<><>::
-::res://Musik/::1739958136
-Autorennen- 2.mp3::AudioStreamMP3::6796298491667178052::1738138429::1739195728::1::::<><>::
-Frogger.mp3::AudioStreamMP3::5499804374888233418::1738138429::1739195728::1::::<><>::
-Intro-2.mp3::AudioStreamMP3::9099561688689059756::1739958105::1739958136::1::::<><>::
-Level-.mp3::AudioStreamMP3::4229080213260357163::1739170870::1739195728::1::::<><>::
-Lobby-.mp3::AudioStreamMP3::7020514481180208981::1738138429::1739195728::1::::<><>::
-::res://Musik/sfx/::1739197123
-Auto-anmachen-und-wegfahren-1.mp3::AudioStreamMP3::3339325821969835202::1739196674::1739196675::1::::<><>::
-Gehen-ohne-Kiste-1.mp3::AudioStreamMP3::7597525870096272009::1739196674::1739196675::1::::<><>::
-Kiste-gegen-wand-1.mp3::AudioStreamMP3::2286177219409238855::1739196675::1739196675::1::::<><>::
-Kiste-mit-gehen-1.mp3::AudioStreamMP3::6013515200338099652::1739196675::1739196675::1::::<><>::
-KotzgrÃ¼ner Wagen.png::CompressedTexture2D::7402229139894361549::1739197123::1739197123::1::::<><>::
-::res://Musik/sfx/Autos/::1739197119
-KotzgrÃ¼ner Wagen.png::CompressedTexture2D::6428747215922060206::1739197119::1739197101::1::::<><>::
-Unbenanntes_Projekt(1).png::CompressedTexture2D::698255978694528310::1739197119::1739197101::1::::<><>::
-Unbenanntes_Projekt.png::CompressedTexture2D::6232644663663030131::1739197119::1739197101::1::::<><>::
-::res://Scenes/::1741169715
-box.tscn::PackedScene::6402788478416566735::1739196775::0::1::::<><>::res://scripts/box.gd<>uid://bjn23rpm67lod::::res://assets/Blöcke/Box.png
-checkpoint.tscn::PackedScene::4886491393099371189::1739173525::0::1::::<><>::res://scripts/checkpoint.gd<>uid://cd8qjgjohoe4p::::res://assets/Blöcke/Checkpoint .png
-frogger_enemy.tscn::PackedScene::7468331356974248986::1741169715::0::1::::<><>::res://frogger_enemy.gd<>uid://d0r3vpnjuqivk::::res://assets/Wall placeholder.png
-frogger_main.gd::GDScript::-1::1741169580::0::1::::<>Node2D<>::
-frogger_main.tscn::PackedScene::6980300567056455880::1741169713::0::1::::<><>::res://Scenes/frogger_main.gd<>res://assets/frogger_lv_1_bg.png<>uid://b11gqor3ng7am::::res://Scenes/frogger_player.tscn
-frogger_player.gd::GDScript::-1::1741166484::0::1::::<>CharacterBody2D<>::
-frogger_player.tscn::PackedScene::4265398077424988492::1741169714::0::1::::<><>::res://Scenes/frogger_player.gd<>uid://dxglydjvvmoua::::res://assets/tile placeholder.png<>uid://7tpafshyft8r::::res://Musik/sfx/Kiste-gegen-wand-1.mp3<>uid://dgike2cslkqpl::::res://Musik/sfx/Gehen-ohne-Kiste-1.mp3
-hud.tscn::PackedScene::3560533972934624323::1741167460::0::1::::<><>::res://scripts/hud.gd<>uid://ceq44r4c4vguq::::res://Scenes/UI.tscn<>uid://swb0sx82vwoq::::res://default_theme.tres<>uid://cebsee781hsw::::res://assets/UI/settings_gear.png<>uid://c33gbp7f5qb7a::::res://Musik/Autorennen- 2.mp3
-mainmenu.tscn::PackedScene::8400665466959627680::1741169712::0::1::::<><>::res://Main_Menu.gd<>uid://d2v5pl8ywuxaq::::res://Musik/Intro-2.mp3<>uid://swb0sx82vwoq::::res://default_theme.tres
-player.tscn::PackedScene::4625268407189497726::1741167457::0::1::::<><>::res://scripts/player.gd<>uid://dmghf6tj6cf5d::::res://assets/Blöcke/running.png<>uid://7tpafshyft8r::::res://Musik/sfx/Kiste-gegen-wand-1.mp3<>uid://dgike2cslkqpl::::res://Musik/sfx/Gehen-ohne-Kiste-1.mp3
-sokoban_lv_2.tscn::PackedScene::949575518318966019::1739774799::0::1::::<><>::uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png
-sokoban_lv_3.tscn::PackedScene::7766405779756458938::1739774799::0::1::::<><>::uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
-sokoban_lv_4.tscn::PackedScene::5217512500278787983::1740379572::0::1::::<><>::res://scripts/sokoban_world.gd<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
-sokoban_lv_5.tscn::PackedScene::4081551119874490228::1739774799::0::1::::<><>::uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>res://scripts/sokoban_world.gd<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
-sokoban_world.tscn::PackedScene::807626133500377168::1741167457::0::1::::<><>::uid://b65rq3d2a3oyw::::res://Scenes/player.tscn<>res://scripts/sokoban_world.gd<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn
-UI.gdshader::Shader::-1::1739774799::0::1::::<><>::
-UI.tscn::PackedScene::5088440304643495624::1741167459::0::1::::<><>::res://scripts/UI.gd<>uid://swb0sx82vwoq::::res://default_theme.tres<>uid://b1iullhrlb0ff::::res://Musik/Level-.mp3<>uid://c71b1emt6d5st::::res://assets/UI/button.png<>uid://dfpwd42shim8u::::res://default_button_shape.tres
-::res://Scenes/autorennen/::1741169715
-autorennen.gd::GDScript::-1::1740406509::0::1::::<>Node2D<>::
-autorennen.tscn::PackedScene::3004108545469453527::1741167458::0::1::::<><>::res://Scenes/autorennen/road_parent.gd<>res://Scenes/autorennen/autorennen.gd<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>res://Scenes/autorennen/auto_bg.gd<>uid://vhl0nuf5cs5::::res://assets/asphalt_road.png<>res://Scenes/autorennen/road.gd<>uid://dbs4l371spsbg::::res://Scenes/autorennen/car_player.tscn
-auto_bg.gd::GDScript::-1::1740382126::0::1::::<>TextureRect<>::
-car_player.gd::GDScript::-1::1739956964::0::1::::car_player<>CharacterBody2D<>::
-car_player.gdshader::Shader::-1::1739956964::0::1::::<><>::
-car_player.tscn::PackedScene::7268391652107123656::1741167664::0::1::::<><>::res://Scenes/autorennen/car_player.gd<>res://Scenes/autorennen/chroma_particles.gdshader<>res://scripts/player_car_shader.gdshader<>uid://c71b1emt6d5st::::res://assets/UI/button.png<>uid://c4gj5htiw4k6f::::res://assets/rakete.png<>uid://dfpwd42shim8u::::res://default_button_shape.tres
-chroma_particles.gdshader::Shader::-1::1741169715::0::1::::<><>::
-chroma_particles.tres::VisualShader::1540107197422798724::1739956964::0::1::::<><>::
-enemy.gd::GDScript::-1::1740562257::0::1::::enemy_car<>Area2D<>::
-road.gd::GDScript::-1::1739774799::0::1::::<>TextureRect<>::
-road_parent.gd::GDScript::-1::1740562257::0::1::::autorennen_level<>Node2D<>::
-::res://Scenes/autorennen/enemies/::1741169712
-enemy_car_1.tscn::PackedScene::4354874932146584081::1741169712::0::1::::<><>::res://Scenes/autorennen/enemy.gd<>res://scripts/car_shader.gdshader<>uid://c4gj5htiw4k6f::::res://assets/rakete.png
-::res://scripts/::1741169715
-box.gd::GDScript::-1::1737983196::0::1::::Box<>Area2D<>::
-carpath.gd::GDScript::-1::1739774822::0::1::::<>Path2D<>::
-car_shader.gdshader::Shader::-1::1741169715::0::1::::<><>::
-checkpoint.gd::GDScript::-1::1734353526::0::1::::<>Area2D<>::
-global_variables.gd::GDScript::-1::1741166931::0::1::::<>Node<>::
-hud.gd::GDScript::-1::1740406533::0::1::::<>CanvasLayer<>::
-player.gd::GDScript::-1::1740563160::0::1::::Player<>CharacterBody2D<>::
-player_car_shader.gdshader::Shader::-1::1741169715::0::1::::<><>::
-sokoban_world.gd::GDScript::-1::1739774822::0::1::::sokoban_level<>Node2D<>::
-UI.gd::GDScript::-1::1739774822::0::1::::<>Control<>::
-walls.gd::GDScript::-1::1734511352::0::1::::Wall<>Area2D<>::
+::res://::1743400124
+default_button_shape.tres::RectangleShape2D::7542514632517333462::1739960564::0::1::::<><>::
+default_theme.tres::Theme::1308921840401392380::1739778422::0::1::::<><>::uid://5k8xqv5qw2qy::::res://assets/PixelOperator8.ttf
+export_presets.cfg::TextFile::-1::1739778422::0::1::::<><>::
+frogger_enemy.gd::GDScript::-1::1742380702::0::1::::Frogger_Enemy<>Node2D<>::
+icon.svg::CompressedTexture2D::9088708559724503890::1733907736::1739961186::1::::<><>::
+kammer.tscn::PackedScene::1142756557761532252::1742987845::0::1::::<><>::uid://bjvjhfp852w1g::::res://assets/kammer (1).png
+Main_Menu.gd::GDScript::-1::1742804664::0::1::::<>Control<>::
+sokoban_tiles.tres::TileSet::5871879983835884021::1741169919::0::1::::<><>::uid://c40lh5ggsps86::::res://assets/Blöcke/Wand  2.png<>uid://bs8tkt4migk2h::::res://assets/Blöcke/Boden .png
+::res://android/::1739778421
+::res://assets/::1742987105
+asphalt_road.png::CompressedTexture2D::43797929600357642::1739778422::1739778422::1::::<><>::
+kammer (1).png::CompressedTexture2D::3062031450092243818::1742987104::1742987105::1::::<><>::
+New Piskel Rakete von innen.png::CompressedTexture2D::4354584337880861697::1742805589::1742805778::1::::<><>::
+PixelOperator8.ttf::FontFile::2128354694902510804::1739778421::1739778421::1::::<><>::
+rakete.png::CompressedTexture2D::6821304523574315091::1741170920::1741170966::1::::<><>::
+sternenhimmel.png::CompressedTexture2D::3914323141301292622::1739960932::1739961213::1::::<><>::
+tile placeholder.png::CompressedTexture2D::8786702639708540912::1734360642::1734360681::1::::<><>::
+Wall placeholder.png::CompressedTexture2D::8950815949687586708::1734512037::1734512070::1::::<><>::
+::res://assets/Autos/::1739779499
+enemy_car.png::CompressedTexture2D::5131586864431251232::1739779466::1739779499::1::::<><>::
+KotzgrÃ¼ner Wagen.png::CompressedTexture2D::8310884832658306964::1739200670::1739200811::1::::<><>::
+player_car.png::CompressedTexture2D::3399940425668006424::1739778421::1739778421::1::::<><>::
+::res://assets/Blöcke/::1739199312
+Boden .png::CompressedTexture2D::3719116859162413237::1738142586::1738142617::1::::<><>::
+Box.png::CompressedTexture2D::3046647464929142331::1738142585::1738142617::1::::<><>::
+Checkpoint .png::CompressedTexture2D::5052520237903026137::1738142586::1738142617::1::::<><>::
+Eisenblock.png::CompressedTexture2D::3911954374507060634::1738142586::1738142617::1::::<><>::
+running.png::CompressedTexture2D::8014350047204509171::1737987508::1739199298::1::::<><>::
+Straße1.png::CompressedTexture2D::7519216379176351287::1738142586::1738142617::1::::<><>::
+Straße2.png::CompressedTexture2D::414012204651097537::1738142586::1738142617::1::::<><>::
+tile_3frame.jpg::CompressedTexture2D::2037928080128712856::1734357829::1739199312::1::::<><>::
+tile_corner.jpg::CompressedTexture2D::3258480576268505865::1734357829::1739199312::1::::<><>::
+tile_full.jpg::CompressedTexture2D::7571674167727584156::1734357829::1739199312::1::::<><>::
+tile_one_side.jpg::CompressedTexture2D::5472709229226985972::1734357829::1739199312::1::::<><>::
+Wand  2.png::CompressedTexture2D::6860609249485009953::1738142586::1738142618::1::::<><>::
+::res://assets/UI/::1739778422
+button.png::CompressedTexture2D::7072665562578992599::1739778422::1739778422::1::::<><>::
+settings_gear.png::CompressedTexture2D::148728277347039990::1739778422::1739778422::1::::<><>::
+::res://Musik/::1739961736
+Autorennen- 2.mp3::AudioStreamMP3::6796298491667178052::1738142029::1739199328::1::::<><>::
+Frogger.mp3::AudioStreamMP3::5499804374888233418::1738142029::1739199328::1::::<><>::
+Intro-2.mp3::AudioStreamMP3::9099561688689059756::1739961705::1739961736::1::::<><>::
+Level-.mp3::AudioStreamMP3::4229080213260357163::1739174470::1739199328::1::::<><>::
+Lobby-.mp3::AudioStreamMP3::7020514481180208981::1738142029::1739199328::1::::<><>::
+::res://Musik/sfx/::1739200723
+Auto-anmachen-und-wegfahren-1.mp3::AudioStreamMP3::3339325821969835202::1739200274::1739200275::1::::<><>::
+Gehen-ohne-Kiste-1.mp3::AudioStreamMP3::7597525870096272009::1739200274::1739200275::1::::<><>::
+Kiste-gegen-wand-1.mp3::AudioStreamMP3::2286177219409238855::1739200275::1739200275::1::::<><>::
+Kiste-mit-gehen-1.mp3::AudioStreamMP3::6013515200338099652::1739200275::1739200275::1::::<><>::
+KotzgrÃ¼ner Wagen.png::CompressedTexture2D::7402229139894361549::1739200723::1739200723::1::::<><>::
+::res://Musik/sfx/Autos/::1739200719
+KotzgrÃ¼ner Wagen.png::CompressedTexture2D::6428747215922060206::1739200719::1739200701::1::::<><>::
+Unbenanntes_Projekt(1).png::CompressedTexture2D::698255978694528310::1739200719::1739200701::1::::<><>::
+Unbenanntes_Projekt.png::CompressedTexture2D::6232644663663030131::1739200719::1739200701::1::::<><>::
+::res://Scenes/::1742987844
+box.tscn::PackedScene::6402788478416566735::1739200375::0::1::::<><>::res://scripts/box.gd<>uid://bjn23rpm67lod::::res://assets/Blöcke/Box.png
+checkpoint.tscn::PackedScene::4886491393099371189::1739177125::0::1::::<><>::res://scripts/checkpoint.gd<>uid://cd8qjgjohoe4p::::res://assets/Blöcke/Checkpoint .png
+frogger_enemy.tscn::PackedScene::7468331356974248986::1742987842::0::1::::<><>::res://frogger_enemy.gd<>uid://d0r3vpnjuqivk::::res://assets/Wall placeholder.png
+frogger_main.gd::GDScript::-1::1742985926::0::1::::<>Node2D<>::
+frogger_main.tscn::PackedScene::6980300567056455880::1742987843::0::1::::<><>::res://Scenes/frogger_main.gd<>uid://b11gqor3ng7am::::res://Scenes/frogger_player.tscn<>uid://b3bnmrhjmlaw4::::res://assets/New Piskel Rakete von innen.png<>uid://qjtbe1s0lmwy::::res://kammer.tscn
+frogger_player.gd::GDScript::-1::1742803214::0::1::::<>CharacterBody2D<>::
+frogger_player.tscn::PackedScene::4265398077424988492::1742987841::0::1::::<><>::res://Scenes/frogger_player.gd<>uid://dxglydjvvmoua::::res://assets/tile placeholder.png<>uid://7tpafshyft8r::::res://Musik/sfx/Kiste-gegen-wand-1.mp3<>uid://dgike2cslkqpl::::res://Musik/sfx/Gehen-ohne-Kiste-1.mp3
+hud.tscn::PackedScene::3560533972934624323::1742987844::0::1::::<><>::res://scripts/hud.gd<>uid://ceq44r4c4vguq::::res://Scenes/UI.tscn<>uid://swb0sx82vwoq::::res://default_theme.tres<>uid://cebsee781hsw::::res://assets/UI/settings_gear.png<>uid://c33gbp7f5qb7a::::res://Musik/Autorennen- 2.mp3
+mainmenu.tscn::PackedScene::8400665466959627680::1742987840::0::1::::<><>::res://Main_Menu.gd<>uid://d2v5pl8ywuxaq::::res://Musik/Intro-2.mp3<>uid://swb0sx82vwoq::::res://default_theme.tres
+player.tscn::PackedScene::4625268407189497726::1741171057::0::1::::<><>::res://scripts/player.gd<>uid://dmghf6tj6cf5d::::res://assets/Blöcke/running.png<>uid://7tpafshyft8r::::res://Musik/sfx/Kiste-gegen-wand-1.mp3<>uid://dgike2cslkqpl::::res://Musik/sfx/Gehen-ohne-Kiste-1.mp3
+sokoban_lv_2.tscn::PackedScene::949575518318966019::1739778399::0::1::::<><>::uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png
+sokoban_lv_3.tscn::PackedScene::7766405779756458938::1739778399::0::1::::<><>::uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>res://scripts/sokoban_world.gd<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
+sokoban_lv_4.tscn::PackedScene::5217512500278787983::1740383172::0::1::::<><>::res://scripts/sokoban_world.gd<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
+sokoban_lv_5.tscn::PackedScene::4081551119874490228::1739778399::0::1::::<><>::uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>res://scripts/sokoban_world.gd<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://b65rq3d2a3oyw::::res://Scenes/player.tscn
+sokoban_world.tscn::PackedScene::807626133500377168::1741171057::0::1::::<><>::uid://b65rq3d2a3oyw::::res://Scenes/player.tscn<>res://scripts/sokoban_world.gd<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>uid://cxhs8xlvslj0b::::res://Scenes/box.tscn<>uid://cpwnagj4rf5g0::::res://sokoban_tiles.tres<>uid://cbvb2gao1s4gf::::res://Scenes/checkpoint.tscn
+UI.gdshader::Shader::-1::1739778399::0::1::::<><>::
+UI.tscn::PackedScene::5088440304643495624::1741171059::0::1::::<><>::res://scripts/UI.gd<>uid://swb0sx82vwoq::::res://default_theme.tres<>uid://b1iullhrlb0ff::::res://Musik/Level-.mp3<>uid://c71b1emt6d5st::::res://assets/UI/button.png<>uid://dfpwd42shim8u::::res://default_button_shape.tres
+::res://Scenes/autorennen/::1742987845
+autorennen.gd::GDScript::-1::1740410109::0::1::::<>Node2D<>::
+autorennen.tscn::PackedScene::3004108545469453527::1741171058::0::1::::<><>::res://Scenes/autorennen/road_parent.gd<>res://Scenes/autorennen/autorennen.gd<>uid://bv1elh1bts8kw::::res://assets/sternenhimmel.png<>res://Scenes/autorennen/auto_bg.gd<>uid://vhl0nuf5cs5::::res://assets/asphalt_road.png<>res://Scenes/autorennen/road.gd<>uid://dbs4l371spsbg::::res://Scenes/autorennen/car_player.tscn
+auto_bg.gd::GDScript::-1::1740385726::0::1::::<>TextureRect<>::
+car_player.gd::GDScript::-1::1739960564::0::1::::car_player<>CharacterBody2D<>::
+car_player.gdshader::Shader::-1::1739960564::0::1::::<><>::
+car_player.tscn::PackedScene::7268391652107123656::1741171264::0::1::::<><>::res://Scenes/autorennen/car_player.gd<>res://Scenes/autorennen/chroma_particles.gdshader<>res://scripts/player_car_shader.gdshader<>uid://c71b1emt6d5st::::res://assets/UI/button.png<>uid://c4gj5htiw4k6f::::res://assets/rakete.png<>uid://dfpwd42shim8u::::res://default_button_shape.tres
+chroma_particles.gdshader::Shader::-1::1742987845::0::1::::<><>::
+chroma_particles.tres::VisualShader::1540107197422798724::1739960564::0::1::::<><>::
+enemy.gd::GDScript::-1::1740565857::0::1::::enemy_car<>Area2D<>::
+road.gd::GDScript::-1::1739778399::0::1::::<>TextureRect<>::
+road_parent.gd::GDScript::-1::1740565857::0::1::::autorennen_level<>Node2D<>::
+::res://Scenes/autorennen/enemies/::1742987840
+enemy_car_1.tscn::PackedScene::4354874932146584081::1742987840::0::1::::<><>::res://Scenes/autorennen/enemy.gd<>res://scripts/car_shader.gdshader<>uid://c4gj5htiw4k6f::::res://assets/rakete.png
+::res://scripts/::1742987845
+box.gd::GDScript::-1::1737986796::0::1::::Box<>Area2D<>::
+carpath.gd::GDScript::-1::1739778422::0::1::::<>Path2D<>::
+car_shader.gdshader::Shader::-1::1742987845::0::1::::<><>::
+checkpoint.gd::GDScript::-1::1734357126::0::1::::<>Area2D<>::
+global_variables.gd::GDScript::-1::1741170531::0::1::::<>Node<>::
+hud.gd::GDScript::-1::1742804529::0::1::::<>CanvasLayer<>::
+player.gd::GDScript::-1::1740566760::0::1::::Player<>CharacterBody2D<>::
+player_car_shader.gdshader::Shader::-1::1742987845::0::1::::<><>::
+sokoban_world.gd::GDScript::-1::1739778422::0::1::::sokoban_level<>Node2D<>::
+UI.gd::GDScript::-1::1739778422::0::1::::<>Control<>::
+walls.gd::GDScript::-1::1734514952::0::1::::Wall<>Area2D<>::
