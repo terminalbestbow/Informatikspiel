@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://drxly6ho66vc7"]
+[gd_scene load_steps=5 format=3 uid="uid://drxly6ho66vc7"]
 
 [ext_resource type="Script" path="res://Main_Menu.gd" id="1_jkgpy"]
 [ext_resource type="AudioStream" uid="uid://d2v5pl8ywuxaq" path="res://Musik/Intro-2.mp3" id="2_1p4f0"]
 [ext_resource type="Theme" uid="uid://swb0sx82vwoq" path="res://default_theme.tres" id="2_irfaj"]
+[ext_resource type="Texture2D" uid="uid://bv1elh1bts8kw" path="res://assets/sternenhimmel.png" id="2_pnlj3"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -12,6 +13,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jkgpy")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+texture = ExtResource("2_pnlj3")
 
 [node name="bgm" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_1p4f0")
@@ -39,21 +46,21 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_irfaj")
-text = "Fünf Nächte bei Informatik
-"
+text = "Unitechnik Space Adventure"
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_irfaj")
-text = "sokoban"
+text = "Unitechnik Paketmann"
 
 [node name="Button2" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_irfaj")
-text = "Autorenenn
+text = "Transport zum Versandhaus
 "
 
 [node name="Button3" type="Button" parent="CenterContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("2_irfaj")
 text = "Frogger"

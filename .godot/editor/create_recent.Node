@@ -1,3 +1,4 @@
+TextureRect
 TileMap
 Node
 CollisionShape2D
@@ -9,6 +10,5 @@ VBoxContainer
 PanelContainer
 Control
 Timer
-TextureRect
 CharacterBody2D
 AudioStreamPlayer2D

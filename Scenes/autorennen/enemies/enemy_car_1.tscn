@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/autorennen/enemy.gd" id="1_p0ig6"]
 [ext_resource type="Shader" path="res://scripts/car_shader.gdshader" id="2_05haf"]
-[ext_resource type="Texture2D" uid="uid://c4gj5htiw4k6f" path="res://assets/rakete.png" id="3_1s24n"]
+[ext_resource type="Texture2D" uid="uid://cfd1qryylwyvw" path="res://assets/Autos/enemy_car.png" id="3_sbfqm"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jhojn"]
 resource_local_to_scene = true
@@ -18,7 +18,7 @@ script = ExtResource("1_p0ig6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_jhojn")
-texture = ExtResource("3_1s24n")
+texture = ExtResource("3_sbfqm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 8)

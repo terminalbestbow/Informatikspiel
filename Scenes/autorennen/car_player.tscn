@@ -4,7 +4,7 @@
 [ext_resource type="Shader" path="res://Scenes/autorennen/chroma_particles.gdshader" id="2_s6qr3"]
 [ext_resource type="Shader" path="res://scripts/player_car_shader.gdshader" id="2_vej0t"]
 [ext_resource type="Texture2D" uid="uid://c71b1emt6d5st" path="res://assets/UI/button.png" id="3_p7ycm"]
-[ext_resource type="Texture2D" uid="uid://c4gj5htiw4k6f" path="res://assets/rakete.png" id="4_csx21"]
+[ext_resource type="Texture2D" uid="uid://cfd1qryylwyvw" path="res://assets/Autos/enemy_car.png" id="4_breat"]
 [ext_resource type="Shape2D" uid="uid://dfpwd42shim8u" path="res://default_button_shape.tres" id="5_20adl"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ab3qe"]
@@ -60,7 +60,7 @@ preprocess = 1.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_cgjkq")
-texture = ExtResource("4_csx21")
+texture = ExtResource("4_breat")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_hvxqr")

@@ -4,10 +4,11 @@ extends Node2D
 enum directions {LEFT, RIGHT}
 var direction : directions
 @onready var my_speed = 1
+@onready var sprite_2d = $Sprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

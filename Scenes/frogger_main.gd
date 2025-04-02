@@ -18,6 +18,14 @@ func spawn_enemy():
 	var height = randi_range(1, 6)
 	var x_position = randi_range(0,1)
 	var balls : Frogger_Enemy = load("res://Scenes/frogger_enemy.tscn").instantiate()
+	
+	var dir_name := "res://assets/frogger_gegner"
+	var dir := DirAccess.open(dir_name)
+	var file_names := dir.get_files()
+	var randomindex = randi_range(0,2)
+	var myImage : Image = Image.new()
+	balls.sprite_2d.texture = myImage.load_svg_from_string(file_names[randomindex])
+	
 	add_child(balls)
 	balls.position = Vector2(128 + 9, height * 16 + 8)
 	balls.direction = balls.directions.LEFT
