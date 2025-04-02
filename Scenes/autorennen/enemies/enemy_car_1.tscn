@@ -18,6 +18,8 @@ script = ExtResource("1_p0ig6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_jhojn")
+position = Vector2(0, 8)
+rotation = 3.14159
 texture = ExtResource("3_sbfqm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

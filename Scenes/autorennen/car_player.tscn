@@ -60,6 +60,7 @@ preprocess = 1.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_cgjkq")
+rotation = 3.14159
 texture = ExtResource("4_breat")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
